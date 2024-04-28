@@ -9,7 +9,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        'nvim-telescope/telescope.nvim', tag = '0.1.4',
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
@@ -95,4 +95,8 @@ return require('packer').startup(function(use)
     end,
     cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
   })
+  use 'David-Kunz/jester'
+  use 'metakirby5/codi.vim'
+  use 'simrat39/inlay-hints.nvim'
+  use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
 end)
